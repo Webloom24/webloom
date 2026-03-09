@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webloom — Desarrollo web para negocios reales</title>
+  <meta name="description" content="Webloom es un proyecto de desarrollo web fundado para crear sitios, catálogos, landing pages y soluciones digitales para negocios reales. Código limpio, criterio de diseño y apoyo de IA." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Webloom — Desarrollo web para negocios reales" />
+  <meta property="og:description" content="Sitios web funcionales, catálogos digitales y soluciones para negocios. Código limpio, buen diseño, resultados reales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://webloom24.github.io" />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F0F0F'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='20' fill='%23C8F04D'>W</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo">Webloom</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre" class="nav__link">Sobre mí</a>
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#proyectos" class="nav__link">Proyectos</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+        <a href="#contacto" class="btn btn--sm btn--accent">Hablemos</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content fade-in">
+          <span class="hero__tag">Desarrollo web · Diseño funcional · IA como herramienta</span>
+          <h1 class="hero__title">
+            Desarrollo web<br />
+            para negocios<br />
+            <span class="accent">reales.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Construyo sitios web, catálogos digitales, landing pages y soluciones
+            funcionales. Trabajo con criterio de diseño y uso herramientas de IA
+            para resolver problemas más rápido y con más precisión.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--accent">Ver proyectos →</a>
+            <a href="#contacto" class="btn btn--outline">Hablemos</a>
+          </div>
+        </div>
+        <div class="hero__visual fade-in fade-in--delay">
+          <div class="hero__card-float">
+            <div class="hcard">
+              <div class="hcard__dot hcard__dot--green"></div>
+              <div class="hcard__dot hcard__dot--yellow"></div>
+              <div class="hcard__dot hcard__dot--red"></div>
+              <div class="hcard__line hcard__line--accent"></div>
+              <div class="hcard__line"></div>
+              <div class="hcard__line hcard__line--short"></div>
+              <div class="hcard__block"></div>
+            </div>
+            <div class="hcard hcard--offset">
+              <div class="hcard__dot hcard__dot--green"></div>
+              <div class="hcard__dot hcard__dot--yellow"></div>
+              <div class="hcard__dot hcard__dot--red"></div>
+              <div class="hcard__line"></div>
+              <div class="hcard__line hcard__line--accent"></div>
+              <div class="hcard__line hcard__line--short"></div>
+              <div class="hcard__block hcard__block--sm"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SOBRE ═══════════════════════════ -->
+    <section class="section sobre" id="sobre">
+      <div class="container">
+        <div class="sobre__inner">
+          <div class="sobre__text reveal">
+            <span class="section-tag">Sobre Webloom</span>
+            <h2 class="section-title">Un proyecto fundado<br />con un propósito claro.</h2>
+            <p>
+              Webloom es un proyecto que fundé para ofrecer desarrollo web honesto
+              y funcional a negocios reales: restaurantes, abogados, tiendas,
+              emprendimientos y empresas que necesitan presencia digital bien hecha.
+            </p>
+            <p>
+              No soy una agencia grande ni un equipo de cincuenta personas. Soy
+              alguien que construye sitios web con criterio, que entiende el negocio
+              del cliente antes de escribir una línea de código, y que entrega
+              soluciones que realmente sirven.
+            </p>
+            <p>
+              Uso herramientas de inteligencia artificial como apoyo para investigar,
+              depurar y optimizar — no como reemplazo del criterio técnico, sino
+              como extensión de él.
+            </p>
+          </div>
+          <div class="sobre__stats reveal reveal--delay">
+            <div class="stat-card">
+              <span class="stat-card__num accent">10+</span>
+              <span class="stat-card__label">Proyectos entregados</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num accent">5+</span>
+              <span class="stat-card__label">Tipos de negocio atendidos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num accent">HTML · CSS · JS</span>
+              <span class="stat-card__label">Stack base sin dependencias innecesarias</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num accent">IA</span>
+              <span class="stat-card__label">Como herramienta de apoyo técnico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SERVICIOS ═══════════════════════════ -->
+    <section class="section servicios" id="servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Servicios</span>
+          <h2 class="section-title">Lo que construyo</h2>
+          <p class="section-subtitle">Soluciones concretas para necesidades reales. Sin paquetes genéricos.</p>
+        </div>
+        <div class="servicios__grid">
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Sitios web completos</h3>
+            <p class="servicio-card__desc">Para negocios que necesitan presencia digital profesional: información, servicios, contacto. Funcional, rápido y bien diseñado.</p>
+          </div>
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Landing pages</h3>
+            <p class="servicio-card__desc">Páginas de aterrizaje enfocadas en conversión. Para campañas, productos, servicios o eventos que necesitan una página específica.</p>
+          </div>
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Catálogos y menús digitales</h3>
+            <p class="servicio-card__desc">Para restaurantes, tiendas y emprendimientos. Catálogos interactivos, fáciles de navegar, accesibles desde el móvil sin necesidad de app.</p>
+          </div>
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Sitios corporativos</h3>
+            <p class="servicio-card__desc">Para empresas, despachos o profesionales que necesitan un sitio institucional sólido, claro y que transmita confianza.</p>
+          </div>
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Integraciones funcionales</h3>
+            <p class="servicio-card__desc">Formularios, WhatsApp, mapas, redes sociales, pasarelas básicas. Conectar el sitio con las herramientas que el negocio ya usa.</p>
+          </div>
+
+          <div class="servicio-card reveal">
+            <div class="servicio-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="servicio-card__title">Mejoras y optimización</h3>
+            <p class="servicio-card__desc">Tienes un sitio que no funciona bien o no se ve como quieres. Lo reviso, lo mejoro y lo dejo usable, rápido y coherente.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROYECTOS ═══════════════════════════ -->
+    <section class="section proyectos" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Proyectos</span>
+          <h2 class="section-title">Trabajo real, clientes reales.</h2>
+          <p class="section-subtitle">Una selección de sitios y soluciones web construidos para negocios.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="proyectos__filters reveal">
+          <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="menu">Menús digitales</button>
+          <button class="filter-btn" data-filter="catalogo">Catálogos</button>
+          <button class="filter-btn" data-filter="corporativo">Corporativo</button>
+          <button class="filter-btn" data-filter="radio">Medios</button>
+        </div>
+
+        <div class="proyectos__grid" id="proyectosGrid">
+
+          <!-- 1. Burger Brother -->
+          <div class="proyecto-card reveal" data-category="menu">
+            <div class="proyecto-card__img">
+              <img src="images/burger brother.webp" alt="Burger Brother Menu" loading="lazy" />
+              <span class="proyecto-card__tag">Menú digital</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Burger Brother Menu</h3>
+              <p class="proyecto-card__desc">Menú digital interactivo para hamburguesería. Diseñado para que los clientes naveguen la carta desde su móvil de forma rápida, clara y sin fricciones.</p>
+              <a href="https://webloom24.github.io/burger-brother-menu/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 2. La 105 Pizzería -->
+          <div class="proyecto-card reveal" data-category="menu">
+            <div class="proyecto-card__img">
+              <img src="images/la 105 pizzeria.webp" alt="La 105 Pizzería" loading="lazy" />
+              <span class="proyecto-card__tag">Menú digital · Mobile-first</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">La 105 Pizzería</h3>
+              <p class="proyecto-card__desc">Menú digital optimizado principalmente para móvil. Pensado para que los clientes consulten la carta desde su teléfono en mesa o de camino al local.</p>
+              <a href="https://webloom24.github.io/menu-la-105-pizzeria/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 3. EntreSueños -->
+          <div class="proyecto-card reveal" data-category="catalogo">
+            <div class="proyecto-card__img">
+              <img src="images/entre sueños.webp" alt="EntreSueños Catálogo" loading="lazy" />
+              <span class="proyecto-card__tag">Catálogo digital</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">EntreSueños Catálogo</h3>
+              <p class="proyecto-card__desc">Catálogo web para negocio de productos. Presentación visual clara de la oferta, accesible desde cualquier dispositivo sin necesidad de descargar nada.</p>
+              <a href="https://webloom24.github.io/entresuenos-catalogo/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 4. Chavos Burger -->
+          <div class="proyecto-card reveal" data-category="menu">
+            <div class="proyecto-card__img">
+              <img src="images/chavos burger.webp" alt="Chavos Burger" loading="lazy" />
+              <span class="proyecto-card__tag">Menú digital</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Chavos Burger</h3>
+              <p class="proyecto-card__desc">Menú digital para hamburguesería local. Diseño directo y apetitoso que ayuda al cliente a decidir rápido y al negocio a comunicar su oferta sin imprimir nada.</p>
+              <a href="https://webloom24.github.io/menu-Chavos-Burger/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 5. Gustavo Burger -->
+          <div class="proyecto-card reveal" data-category="menu">
+            <div class="proyecto-card__img">
+              <img src="images/gustavo burger.webp" alt="Gustavo Burger" loading="lazy" />
+              <span class="proyecto-card__tag">Menú digital</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Gustavo Burger</h3>
+              <p class="proyecto-card__desc">Carta digital para otro emprendimiento gastronómico. Cada menú se adapta a la identidad del negocio, manteniendo la navegación simple y la presentación limpia.</p>
+              <a href="https://webloom24.github.io/menu-Gustavo-Burger/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 6. Radio Coes -->
+          <div class="proyecto-card reveal" data-category="radio">
+            <div class="proyecto-card__img">
+              <img src="images/radio coes.webp" alt="Radio Coes" loading="lazy" />
+              <span class="proyecto-card__tag">Medios / Radio</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Radio Coes</h3>
+              <p class="proyecto-card__desc">Sitio web para emisora de radio. Presencia digital con información, programación y acceso al contenido del medio. Diseño que transmite identidad radial.</p>
+              <a href="https://radiocoes.com/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 7. CaliXpress -->
+          <div class="proyecto-card reveal" data-category="catalogo">
+            <div class="proyecto-card__img">
+              <img src="images/calixpress.webp" alt="CaliXpress" loading="lazy" />
+              <span class="proyecto-card__tag">Catálogo / Servicio</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">CaliXpress</h3>
+              <p class="proyecto-card__desc">Sitio para negocio de servicios con enfoque en información clara y acceso rápido a lo que el cliente necesita. Diseño ágil orientado a conversión.</p>
+              <a href="https://webloom24.github.io/Calixpress/" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 8. Jaimes Abogados -->
+          <div class="proyecto-card reveal" data-category="corporativo">
+            <div class="proyecto-card__img">
+              <img src="images/jaimes abogados.webp" alt="Jaimes Abogados" loading="lazy" />
+              <span class="proyecto-card__tag">Sitio corporativo · Legal</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Jaimes Abogados</h3>
+              <p class="proyecto-card__desc">Sitio institucional para despacho jurídico. Diseñado para transmitir confianza, presentar los servicios legales con claridad y facilitar el contacto con el cliente.</p>
+              <a href="https://www.jaimesabogados.com" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 9. Escaleras Ferre -->
+          <div class="proyecto-card reveal" data-category="corporativo">
+            <div class="proyecto-card__img">
+              <img src="images/escaleras ferre.webp" alt="Escaleras Ferre" loading="lazy" />
+              <span class="proyecto-card__tag">Sitio corporativo · Construcción</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Escaleras Ferre</h3>
+              <p class="proyecto-card__desc">Presencia digital para empresa del sector de la construcción y ferretería. Muestra productos, servicios y datos de contacto de forma directa y profesional.</p>
+              <a href="https://www.escalerasferre.com" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+          <!-- 10. Granos Surcaribe -->
+          <div class="proyecto-card reveal" data-category="corporativo">
+            <div class="proyecto-card__img">
+              <img src="images/granos sur caribe.webp" alt="Granos Surcaribe" loading="lazy" />
+              <span class="proyecto-card__tag">Sitio corporativo · Agroindustria</span>
+            </div>
+            <div class="proyecto-card__body">
+              <h3 class="proyecto-card__title">Granos Surcaribe</h3>
+              <p class="proyecto-card__desc">Sitio para empresa del sector agroindustrial colombiano. Diseño institucional que comunica solidez y confianza, enfocado en presentar la empresa y sus líneas de producto.</p>
+              <a href="https://www.granossurcaribe.com.co" target="_blank" rel="noopener" class="proyecto-card__link">Ver proyecto →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROCESO ═══════════════════════════ -->
+    <section class="section proceso" id="proceso">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Cómo trabajo</span>
+          <h2 class="section-title">Sin vueltas, sin sorpresas.</h2>
+          <p class="section-subtitle">Un proceso claro desde la primera conversación hasta la entrega final.</p>
+        </div>
+        <div class="proceso__steps">
+
+          <div class="proceso-step reveal">
+            <div class="proceso-step__num">01</div>
+            <div class="proceso-step__content">
+              <h3>Entender la necesidad</h3>
+              <p>Antes de proponer soluciones, escucho. Qué necesita el negocio, quién es el cliente final y qué debe lograr el sitio.</p>
+            </div>
+          </div>
+
+          <div class="proceso-step reveal">
+            <div class="proceso-step__num">02</div>
+            <div class="proceso-step__content">
+              <h3>Proponer una solución clara</h3>
+              <p>Defino estructura, funcionalidades y enfoque visual. Sin sobredimensionar ni hacer más de lo que se necesita.</p>
+            </div>
+          </div>
+
+          <div class="proceso-step reveal">
+            <div class="proceso-step__num">03</div>
+            <div class="proceso-step__content">
+              <h3>Construir</h3>
+              <p>Código limpio, diseño responsive, buenas prácticas. Uso herramientas de IA para depurar, investigar y avanzar más rápido sin perder criterio.</p>
+            </div>
+          </div>
+
+          <div class="proceso-step reveal">
+            <div class="proceso-step__num">04</div>
+            <div class="proceso-step__content">
+              <h3>Ajustar detalles</h3>
+              <p>Revisión real en distintos dispositivos, ajuste de textos, colores y comportamientos hasta que esté bien.</p>
+            </div>
+          </div>
+
+          <div class="proceso-step reveal">
+            <div class="proceso-step__num">05</div>
+            <div class="proceso-step__content">
+              <h3>Entregar algo usable</h3>
+              <p>No entrego "borradores". Entrego sitios terminados, publicados y listos para que el negocio los use desde el primer día.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ IA ═══════════════════════════ -->
+    <section class="section ia" id="ia">
+      <div class="container">
+        <div class="ia__inner reveal">
+          <div class="ia__text">
+            <span class="section-tag">IA como herramienta</span>
+            <h2 class="section-title">Uso inteligencia artificial.<br />Pero el criterio es mío.</h2>
+            <p>
+              Uso herramientas como Claude, ChatGPT y Gemini en mi flujo de trabajo. No para que "hagan el trabajo por mí", sino como apoyo técnico real: investigar soluciones a problemas específicos, depurar código, entender documentación, explorar alternativas más eficientes.
+            </p>
+            <p>
+              La IA acelera ciertos procesos. Pero la decisión de qué construir, cómo estructurarlo y si realmente resuelve el problema del cliente — eso sigue siendo criterio humano.
+            </p>
+            <p>
+              En desarrollo web, la herramienta importa menos que saber usarla bien. Y eso es lo que intento hacer.
+            </p>
+          </div>
+          <div class="ia__pills">
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Investigar soluciones
+            </div>
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Depurar código
+            </div>
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 13 9 20 9"/><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+              Acelerar desarrollo
+            </div>
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              Optimizar procesos
+            </div>
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Leer documentación
+            </div>
+            <div class="ia-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg>
+              Explorar alternativas
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACTO ═══════════════════════════ -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+        <div class="contacto__inner reveal">
+          <div class="contacto__text">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">¿Tienes un proyecto<br />en mente?</h2>
+            <p>
+              Si necesitas un sitio web, quieres mejorar uno que ya tienes,
+              o simplemente quieres conversar sobre lo que tu negocio necesita
+              digitalmente — escríbeme. Sin compromiso, sin formularios complicados.
+            </p>
+            <p class="contacto__note">Respondo por WhatsApp o correo. Generalmente el mismo día.</p>
+          </div>
+          <div class="contacto__actions">
+            <a href="https://wa.me/573154674742?text=Hola,%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" class="contacto-btn contacto-btn--wa">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              Escribir por WhatsApp
+            </a>
+            <a href="mailto:nicolasserranofranco24@gmail.com" class="contacto-btn contacto-btn--email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              nicolasserranofranco24@gmail.com
+            </a>
+            <a href="https://github.com/webloom24" target="_blank" rel="noopener" class="contacto-btn contacto-btn--github">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Webloom</span>
+        <p>Desarrollo web para negocios reales.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#sobre">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__copy">
+        <p>© 2025 Webloom. Hecho con criterio y código limpio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
