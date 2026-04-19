@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /express/
+Disallow: /demos/
+Sitemap: https://webloom24.github.io/webloom/sitemap.xml

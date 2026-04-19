@@ -1,0 +1,297 @@
+/* ===== VARIABLES DE COLOR - Cambia aquí para personalizar ===== */
+:root {
+  --color-primario: #2563eb; /* Azul principal */
+  --color-primario-oscuro: #1d4ed8;
+  --color-acento: #f59e0b; /* Botón WhatsApp / destacado */
+  --color-texto: #1e293b;
+  --color-texto-suave: #64748b;
+  --color-fondo: #f8fafc;
+  --color-blanco: #ffffff;
+  --color-borde: #e2e8f0;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1ebe57;
+  --sombra-suave: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --radio: 12px;
+}
+
+/* ===== RESET Y BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== CLASES REUTILIZABLES ===== */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.seccion {
+  padding: 64px 0;
+}
+.seccion-titulo {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.seccion-subtitulo {
+  text-align: center;
+  color: var(--color-texto-suave);
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+.badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: var(--color-primario);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-whatsapp);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: var(--radio);
+  transition:
+    background 0.2s,
+    transform 0.15s;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+.btn-whatsapp:hover {
+  background: var(--color-whatsapp-hover);
+  transform: translateY(-2px);
+}
+.btn-whatsapp svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+/* ===== BOTÓN SECUNDARIO ===== */
+.btn-secundario {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--color-blanco);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: var(--radio);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: background 0.2s;
+}
+.btn-secundario:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== HERO ===== */
+.hero {
+  /* Reemplaza la URL por la imagen del negocio */
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.62), rgba(15, 23, 42, 0.72)),
+    url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=80")
+      center/cover no-repeat;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  color: var(--color-blanco);
+}
+.hero-contenido {
+  max-width: 600px;
+}
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.hero h1 span {
+  color: var(--color-acento);
+}
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* ===== TARJETAS DE SERVICIOS ===== */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.tarjeta {
+  background: var(--color-blanco);
+  border-radius: var(--radio);
+  padding: 32px 28px;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-borde);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.tarjeta-icono {
+  width: 52px;
+  height: 52px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+}
+.tarjeta h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.tarjeta p {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  line-height: 1.6;
+}
+
+/* ===== SECCIÓN CONFIANZA ===== */
+.confianza {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+}
+.confianza-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.confianza-texto h2 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.confianza-texto p {
+  opacity: 0.85;
+  max-width: 480px;
+}
+.stats-fila {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.stat {
+  text-align: center;
+}
+.stat-numero {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.stat-etiqueta {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+/* ===== SECCIÓN CONTACTO ===== */
+.contacto {
+  background: var(--color-blanco);
+  text-align: center;
+}
+.contacto-caja {
+  background: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: 16px;
+  padding: 48px 32px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contacto-telefono {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  margin: 12px 0 28px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--color-texto);
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.85rem;
+}
+.footer span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .seccion {
+    padding: 48px 0;
+  }
+  .hero {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  .hero-botones {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-whatsapp,
+  .btn-secundario {
+    width: 100%;
+    justify-content: center;
+  }
+  .confianza-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .stats-fila {
+    justify-content: center;
+  }
+}
